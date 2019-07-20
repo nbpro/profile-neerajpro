@@ -8,9 +8,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import "./style.scss";
-import SideBar from "../../components/sidebar/Sidebar";
-import Logo from "../../components/logo";
 import Navigation from "../../components/Navigation";
+import avatar from "./../../images/avatar.jpg"
+import { Resume } from "../../components/resume/resume";
 
 export default class HomePage extends React.PureComponent {
   // eslint-disable-line react/prefer-stateless-function
@@ -47,13 +47,18 @@ export default class HomePage extends React.PureComponent {
                   <div className="columns is-centered">
                     <div className="column">
                       <h1 className="title is-spaced">
-                        Frontend Developer | UI/UX Enthusiast
+                        Frontend, Web & App Engineer
                       </h1>
-                      <h2 className="subtitle is-size-4-desktop">
-                        I love browsers and half of the day goes with browsers
-                      </h2>
+                      <h6 className="subtitle is-size-6-desktop">
+                        I create functional, fast and intutive web apps.
+                      </h6>
+                      <img
+                        src={avatar}
+                        className="avatar"
+                      ></img>
                     </div>
                   </div>
+                  <Resume resumeText="Download My resume"/>
                 </div>
               </div>
             </section>
