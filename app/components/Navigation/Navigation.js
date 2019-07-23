@@ -28,13 +28,13 @@ export class Navigation extends React.Component {
             <div className={`navbar-module navbar-menu ${this.state.addClass ? "is-active" : ""}`} id="navMenu">
               <div className="navbar-end">
                 <span className="navbar-item">
-                  <a className="link">About</a>
+                  <a className="link" href="/about">About</a>
                 </span>
                 <span className="navbar-item">
-                  <a className="link">Projects</a>
+                  <a className="link" href="/projects">Projects</a>
                 </span>
                 <span className="navbar-item">
-                  <a className="link">Contact</a>
+                  <a className="link" href="connect">Contact</a>
                 </span>
               </div>
             </div>
