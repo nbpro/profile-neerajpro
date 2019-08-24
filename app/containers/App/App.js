@@ -14,6 +14,7 @@ import HomePage from "containers/HomePage/Loadable";
 import FeaturePage from "containers/FeaturePage/Loadable";
 import NotFoundPage from "containers/NotFoundPage/Loadable";
 import AboutPage from "containers/AboutPage/Loadable";
+import ContactMe from 'containers/ContactMe/Loadable';
 import "./style.scss";
 
 const App = () => (
@@ -23,7 +24,7 @@ const App = () => (
     </Helmet>
     <Switch>
       <Route exact path="/" component={HomePage} />
-      <Route path="/features" component={FeaturePage} />
+      <Route path="/connect" component={ContactMe} />
       <Route path="/about" component={AboutPage} />
       <Route path="" component={NotFoundPage} />
     </Switch>

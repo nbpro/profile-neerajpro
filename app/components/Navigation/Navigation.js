@@ -34,7 +34,7 @@ export class Navigation extends React.Component {
                   <a className="link" href="/projects">Projects</a>
                 </span>
                 <span className="navbar-item">
-                  <a className="link" href="connect">Contact</a>
+                  <a className="link" href="/connect">Contact</a>
                 </span>
               </div>
             </div>
