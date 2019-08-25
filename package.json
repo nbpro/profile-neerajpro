@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "A profile for neeraj goswami",
   "scripts": {
-    "start": "node index.js",
+    "start": "serve -s build",
     "heroku-postbuild": "npm install && npm run build",
     "prebuild": "npm run build:clean",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.babel.js --color -p --progress --hide-modules --display-optimization-bailout",
@@ -50,6 +50,7 @@
     "reselect": "4.0.0",
     "sanitize.css": "8.0.0",
     "sass": "^1.22.7",
+    "serve": "^11.1.0",
     "warning": "^4.0.1",
     "whatwg-fetch": "2.0.4"
   },
