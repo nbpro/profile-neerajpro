@@ -1,0 +1,38 @@
+.home-page h2 {
+  font-size: 1.5em;
+}
+
+.home-page section:first-child {
+  margin-top: 0;
+}
+
+.home-page section.centered {
+  text-align: center;
+}
+
+.home-page form {
+  margin-bottom: 1em;
+}
+
+.home-page form input {
+  outline: none;
+  border-bottom: 1px dotted #999;
+}
+
+.home-page span.at-prefix {
+  color: black;
+  margin-left: 0.4em;
+}
+
+.home-page .column {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: .75rem;
+}
+
+.home-page .is-centered {
+  display: flex;
+  justify-content: center;
+}

@@ -13,8 +13,8 @@ import { Switch, Route } from "react-router-dom";
 import HomePage from "containers/HomePage/Loadable";
 import FeaturePage from "containers/FeaturePage/Loadable";
 import NotFoundPage from "containers/NotFoundPage/Loadable";
-import Header from "components/Header";
-import Footer from "components/Footer";
+import AboutPage from "containers/AboutPage/Loadable";
+import ContactMe from 'containers/ContactMe/Loadable';
 import "./style.scss";
 
 const App = () => (
@@ -24,7 +24,8 @@ const App = () => (
     </Helmet>
     <Switch>
       <Route exact path="/" component={HomePage} />
-      <Route path="/features" component={FeaturePage} />
+      <Route path="/connect" component={ContactMe} />
+      <Route path="/about" component={AboutPage} />
       <Route path="" component={NotFoundPage} />
     </Switch>
   </div>

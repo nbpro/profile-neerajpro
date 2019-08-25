@@ -9,7 +9,7 @@ import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import "./style.scss";
 import Navigation from "../../components/Navigation";
-import avatar from "./../../images/avatar.jpg"
+import avatar from "../../images/avatar.jpg";
 import { Resume } from "../../components/resume/resume";
 
 export default class HomePage extends React.PureComponent {
@@ -40,7 +40,7 @@ export default class HomePage extends React.PureComponent {
         </Helmet>
         <div className="home-page">
           <Navigation />
-          <div className="section">
+          <section className="section">
             <section className="hero is-white has-text-centered">
               <div className="hero-body">
                 <div className="container">
@@ -53,16 +53,17 @@ export default class HomePage extends React.PureComponent {
                         I create functional, fast and intutive web apps.
                       </h6>
                       <img
+                        alt="profile-avatar"
                         src={avatar}
                         className="avatar"
-                      ></img>
+                      />
                     </div>
                   </div>
-                  <Resume resumeText="Download My resume"/>
+                  <Resume resumeText="Download My resume" />
                 </div>
               </div>
             </section>
-          </div>
+          </section>
         </div>
       </article>
     );

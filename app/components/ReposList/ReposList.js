@@ -21,7 +21,6 @@ const ReposList = ({ loading, error, repos }) => {
   if (repos !== false) {
     return <List items={repos} component={RepoListItem} />;
   }
-
   return null;
 };
 
