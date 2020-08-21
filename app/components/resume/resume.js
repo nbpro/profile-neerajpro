@@ -11,8 +11,8 @@ export class Resume extends React.Component {
     this.setState({
       loading: true
     });
-    const url = `https://neerajpro-profile.herokuapp.com/resume.pdf`;
-    window.open(url, "_blank");
+    const url = `https://drive.google.com/file/d/1lfAcJi72PRkHikPQ6T4IU5tMekLZJg7M/view?usp=sharing`;
+    window.open(url, url);
     this.setState({
       loading: false,
     })
